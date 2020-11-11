@@ -1,0 +1,127 @@
+/*
+obsidian-plex
+
+# Features
+
+- [IBM Plex](https://www.ibm.com/plex/) fonts, must be locally installed.
+- Monospace font for tables in editor mode
+
+# Credits
+
+Color palette for graph in dark mode are from https://github.com/nickmilo/Cybertron
+
+*/
+
+:root {
+  /* 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif; */
+  --font-family-editor: 'IBM Plex Sans', var(--default-font); 
+  --font-family-preview: 'IBM Plex Sans', var(--default-font);
+  --font-family-monospace: 'IBM Plex Mono', 'Source Code Pro', monospace;
+}
+
+.theme-light
+{
+  /* defaults */
+  --graph-circle: var(--text-normal);
+  --graph-line: var(--background-modifier-border);
+  --graph-text: var(--text-normal);
+  --graph-tag: #e0d3af;
+  --graph-attach: #83d4f4;
+  --graph-unresolved: var(--text-muted);
+
+  /* Colors from https://github.com/ryjjin/Obsidian-Dark-Graphite-Pie-theme/blob/main/obsidian.css */
+  --graph-circle: #ec0c0c;
+  --graph-line: #cccccc;
+  --graph-text: #969696;
+  --graph-tag: #b9ec41;
+  --graph-attach: #83d4f4;
+  --graph-unresolved: rgb(143, 147, 143);  
+}
+
+.theme-dark {
+  --graph-circle:#fcf601;
+  --graph-line: #26798c;
+  --graph-bg: rgb(22, 22, 22);
+  --graph-text:#cccccc;
+  --graph-tag: #5dbcd2;
+  --graph-attach: #d669bc;
+  --graph-unresolved: #9e8aff;
+}
+
+
+/** Graph View ***************************************************************/
+
+.graph-view.color-fill {
+  color: var(--graph-circle);
+}
+
+.graph-view.color-circle {
+  color: var(--graph-circle);
+}
+
+.graph-view.color-line {
+  color: var(--graph-line);
+}
+
+.graph-view.color-text {
+  color: var(--graph-text);
+}
+
+.graph-view.color-fill-highlight {
+  color: var(--interactive-accent);
+}
+
+.graph-view.color-line-highlight {
+  color: rgb(var(--interactive-accent-rgb));
+}
+
+.graph-view.color-fill-tag {
+  color: var(--graph-tag) !important;
+}
+
+.graph-view.color-fill-attachment {
+  color: var(--graph-attach) !important;
+}
+
+.graph-view.color-fill-unresolved {
+  color: var(--graph-unresolved);
+  opacity: 1;
+}
+
+.graph-view.color-arrow {
+  color: var(--graph-line);
+  opacity: 1;
+}
+
+
+/** Editor *******************************************************************/
+
+.markdown-source-view {
+  font-family: var(--font-family-editor);
+}
+
+.cm-s-obsidian .hmd-fold-html-stub,
+.cm-s-obsidian .hmd-fold-code-stub,
+.cm-s-obsidian .CodeMirror .HyperMD-hover > .HyperMD-hover-content code,
+.cm-s-obsidian .cm-formatting-hashtag,
+.cm-s-obsidian .cm-inline-code,
+.cm-s-obsidian .HyperMD-codeblock,
+.cm-s-obsidian .HyperMD-hr,
+.cm-s-obsidian .cm-hmd-frontmatter,
+.cm-s-obsidian .cm-hmd-orgmode-markup,
+.cm-s-obsidian .cm-formatting-code,
+.cm-s-obsidian .cm-math,
+.cm-s-obsidian span.hmd-fold-math-placeholder,
+.cm-s-obsidian .CodeMirror-linewidget kbd,
+.cm-s-obsidian .hmd-fold-html kbd,
+.cm-s-obsidian pre.HyperMD-table-row /* treat table rows as code */ {
+  font-family: var(--font-family-monospace);
+  font-size: 90%;
+}
+
+/** Preview ******************************************************************/
+
+.markdown-preview-view {
+  font-family: var(--font-family-preview);
+}
+
