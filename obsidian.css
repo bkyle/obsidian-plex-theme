@@ -8,44 +8,64 @@ obsidian-plex
 
 # Credits
 
-Color palette for graph in dark mode are from https://github.com/nickmilo/Cybertron
+- Color palette for graph in dark mode are from https://github.com/nickmilo/Cybertron
+- Color palette for graph in light node are from https://github.com/ryjjin/Obsidian-Dark-Graphite-Pie-theme
 
 */
 
 :root {
-  /* 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif; */
   --font-family-editor: 'IBM Plex Sans', var(--default-font); 
   --font-family-preview: 'IBM Plex Sans', var(--default-font);
   --font-family-monospace: 'IBM Plex Mono', 'Source Code Pro', monospace;
+  
+  --pie-graph-circle: #ec0c0c;
+  --pie-graph-line: #cccccc;
+  --pie-graph-text: #969696;
+  --pie-graph-tag: #b9ec41;
+  --pie-graph-attach: #83d4f4;
+  --pie-graph-unresolved: #8f938f;
+
+  --cybertron-graph-circle: #fcf601;
+  --cybertron-graph-line: #26798c;
+  --cybertron-graph-text: #cccccc;
+  --cybertron-graph-tag: #5dbcd2;
+  --cybertron-graph-attach: #d669bc;
+  --cybertron-graph-unresolved: #9e8aff;
+
 }
 
 .theme-light
 {
-  /* defaults */
-  --graph-circle: var(--text-normal);
-  --graph-line: var(--background-modifier-border);
-  --graph-text: var(--text-normal);
-  --graph-tag: #e0d3af;
-  --graph-attach: #83d4f4;
-  --graph-unresolved: var(--text-muted);
+  --graph-circle: var(--pie-graph-circle);
+  --graph-line: var(--pie-graph-line);
+  --graph-text: var(--pie-graph-text);
+  --graph-tag: var(--pie-graph-tag);
+  --graph-attach: var(--pie-graph-attach);
+  --graph-unresolved: var(--pie-graph-unresolved);
 
-  /* Colors from https://github.com/ryjjin/Obsidian-Dark-Graphite-Pie-theme/blob/main/obsidian.css */
-  --graph-circle: #ec0c0c;
-  --graph-line: #cccccc;
-  --graph-text: #969696;
-  --graph-tag: #b9ec41;
-  --graph-attach: #83d4f4;
-  --graph-unresolved: rgb(143, 147, 143);  
+  /* obsidian defaults for light mode. */
+  /* --obsidian-graph-circle: var(--text-normal);
+  --obsidian-graph-line: var(--background-modifier-border);
+  --obsidian-graph-text: var(--text-normal);
+  --obsidian-graph-tag: #e0d3af;
+  --obsidian-graph-attach: #83d4f4;
+  --obsidian-graph-unresolved: var(--text-muted);
+
+  --graph-circle: var(--obsidian-graph-circle);
+  --graph-line: var(--obsidian-graph-line);
+  --graph-text: var(--obsidian-graph-text);
+  --graph-tag: var(--obsidian-graph-tag);
+  --graph-attach: var(--obsidian-graph-attach);
+  --graph-unresolved: var(--obsidian-graph-unresolved); */
 }
 
 .theme-dark {
-  --graph-circle:#fcf601;
-  --graph-line: #26798c;
-  --graph-bg: rgb(22, 22, 22);
-  --graph-text:#cccccc;
-  --graph-tag: #5dbcd2;
-  --graph-attach: #d669bc;
-  --graph-unresolved: #9e8aff;
+  --graph-circle: var(--cybertron-graph-circle);
+  --graph-line: var(--cybertron-graph-line);
+  --graph-text: var(--cybertron-graph-text);
+  --graph-tag: var(--cybertron-graph-tag);
+  --graph-attach: var(--cybertron-graph-attach);
+  --graph-unresolved: var(--cybertron-graph-unresolved);
 }
 
 
