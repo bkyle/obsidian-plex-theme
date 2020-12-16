@@ -5,6 +5,7 @@ obsidian-plex
 
 - [IBM Plex](https://www.ibm.com/plex/) fonts, must be locally installed.
 - Monospace font for tables in editor mode
+- Fixes for paragraph spacing in blockquotes in preview
 
 # Credits
 
@@ -145,3 +146,17 @@ obsidian-plex
   font-family: var(--font-family-preview);
 }
 
+/* fix spacing between paragrapghs in a blockquote in preview mode. */
+.markdown-preview-view blockquote p,
+.markdown-preview-view blockquote ol,
+.markdown-preview-view blockquote ul {
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+    margin-inline-start: 1em;
+    margin-inline-end: 1em;
+}
+
+/* fix spacing between paragrapghs in a blockquote in preview mode. */
+.markdown-preview-view blockquote {
+    padding: unset;
+}
