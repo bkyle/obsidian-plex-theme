@@ -160,3 +160,38 @@ obsidian-plex
 .markdown-preview-view blockquote {
     padding: unset;
 }
+
+/* Lighten headings */
+.markdown-preview-view h1 {
+  font-weight: 500;
+}
+
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6 {
+    font-weight: 400;
+}
+
+/* Line under headings */
+.theme-dark .markdown-preview-view h1,
+.theme-dark .markdown-preview-view h2,
+.theme-dark .markdown-preview-view h3,
+.theme-dark .markdown-preview-view h4,
+.theme-dark .markdown-preview-view h5,
+.theme-dark .markdown-preview-view h6 {
+  padding-bottom: 0.25em;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+/* Line under headings */
+.theme-light .markdown-preview-view h1,
+.theme-light .markdown-preview-view h2,
+.theme-light .markdown-preview-view h3,
+.theme-light .markdown-preview-view h4,
+.theme-light .markdown-preview-view h5,
+.theme-light .markdown-preview-view h6 {
+  padding-bottom: 0.25em;
+  border-bottom: 1px solid var(--background-primary-alt); /*#eeeeee;*/
+}
