@@ -166,12 +166,35 @@ obsidian-plex
   font-weight: 500;
 }
 
+/* Lighten headings */
 .markdown-preview-view h2,
 .markdown-preview-view h3,
 .markdown-preview-view h4,
 .markdown-preview-view h5,
 .markdown-preview-view h6 {
     font-weight: 400;
+}
+
+/* Adjust font size to match source view */
+.markdown-preview-view h1 {
+  font-size: 32px;
+}
+
+/* Adjust font size to match source view */
+.markdown-preview-view h2 {
+  font-size: 24px;
+}
+
+/* Adjust font size to match source view */
+.markdown-preview-view h3 {
+  font-size: 19.2px;
+}
+
+/* Adjust font size to match source view */
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6 {
+  font-size: 16px;
 }
 
 /* Line under headings */
@@ -194,4 +217,10 @@ obsidian-plex
 .theme-light .markdown-preview-view h6 {
   padding-bottom: 0.25em;
   border-bottom: 1px solid var(--background-primary-alt); /*#eeeeee;*/
+}
+
+/** Source View **************************************************************/
+
+.cm-header {
+  font-weight: 450 !important;
 }
