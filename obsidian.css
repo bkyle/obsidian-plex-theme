@@ -219,6 +219,21 @@ obsidian-plex
   border-bottom: 1px solid var(--background-primary-alt); /*#eeeeee;*/
 }
 
+/* Hide title element when including an entire note. */
+.markdown-embed-title {
+  display: none;
+}
+
+/* Fixup spacing for transclusions */
+.markdown-embed .markdown-preview-view {
+  padding: 0px 0px 0px 0px;
+}
+
+/* Fixup spacing for transclusions */
+.markdown-embed-link, .file-embed-link {
+  top: 16px;
+}
+
 /** Source View **************************************************************/
 
 .cm-header {
