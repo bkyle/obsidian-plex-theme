@@ -146,21 +146,6 @@ obsidian-plex
   font-family: var(--font-family-preview);
 }
 
-/* fix spacing between paragrapghs in a blockquote in preview mode. */
-.markdown-preview-view blockquote p,
-.markdown-preview-view blockquote ol,
-.markdown-preview-view blockquote ul {
-	margin-block-start: 1em;
-	margin-block-end: 1em;
-    margin-inline-start: 1em;
-    margin-inline-end: 1em;
-}
-
-/* fix spacing between paragrapghs in a blockquote in preview mode. */
-.markdown-preview-view blockquote {
-    padding: unset;
-}
-
 /* Lighten headings */
 .markdown-preview-view h1 {
   font-weight: 500;
