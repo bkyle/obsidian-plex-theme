@@ -232,10 +232,52 @@ obsidian-plex
 /* Fixup spacing for transclusions */
 .markdown-embed-link, .file-embed-link {
   top: 16px;
+  right: -32px;
 }
 
 /** Source View **************************************************************/
 
 .cm-header {
   font-weight: 450 !important;
+}
+
+/** Guides for nested lists *************************************************/
+
+.cm-hmd-list-indent .cm-tab, ul ul {
+    position: relative;
+}
+
+.cm-hmd-list-indent .cm-tab::before, ul ul::before {
+    content:'';
+    border-left: 1px solid;
+    position: absolute;
+}
+
+.theme-dark .cm-hmd-list-indent .cm-tab::before, ul ul::before {
+    border-color: var(--background-modifier-border);
+}
+
+.theme-light .cm-hmd-list-indent .cm-tab::before, ul ul::before {
+    border-color: var(--background-modifier-border);
+}
+
+.cm-hmd-list-indent .cm-tab::before {
+    left: 0;
+    top: -5px;
+    bottom: -4px; 
+}
+
+ul ul::before {
+    left: -1em;
+    top: 0;
+    bottom: 0; 
+} 
+
+/**
+ * Eliminate scroll bars for transclusions
+ * See https://forum.obsidian.md/t/flush-inline-embeds/7747/9?u=bkyle
+ */
+.markdown-preview-view .markdown-embed-content,
+.markdown-preview-view .markdown-embed-content>.markdown-preview-view {
+  max-height: unset;
 }
