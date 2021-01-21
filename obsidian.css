@@ -1,7 +1,7 @@
 /*
 obsidian-plex
 
-# Featureshttps://github.com/bkyle/obsidian-plex-theme/blob/main/obsidian-plex.css
+# Features
 
 - [IBM Plex](https://www.ibm.com/plex/) fonts, must be locally installed.
 - Monospace font for tables in editor mode
@@ -35,8 +35,7 @@ obsidian-plex
 
 }
 
-.theme-light
-{
+.theme-light {
   --graph-circle: var(--pie-graph-circle);
   --graph-line: var(--pie-graph-line);
   --graph-text: var(--pie-graph-text);
@@ -58,6 +57,11 @@ obsidian-plex
   --graph-tag: var(--obsidian-graph-tag);
   --graph-attach: var(--obsidian-graph-attach);
   --graph-unresolved: var(--obsidian-graph-unresolved); */
+
+  --text-accent: #002d9c;
+  --text-accent-hover: #0f62fe;
+  --interactive-accent: #002d9c;
+  --interactive-accent-hover: #001d6c;
 }
 
 .theme-dark {
@@ -67,6 +71,11 @@ obsidian-plex
   --graph-tag: var(--cybertron-graph-tag);
   --graph-attach: var(--cybertron-graph-attach);
   --graph-unresolved: var(--cybertron-graph-unresolved);
+
+  --text-accent: #78a9ff;
+  --text-accent-hover: #a6c8ff;
+  --interactive-accent: #002d9c;
+  --interactive-accent-hover: #001d6c;
 }
 
 
