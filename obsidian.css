@@ -219,7 +219,7 @@ obsidian-plex
 }
 
 /* Fixup spacing for transclusions */
-.markdown-embed .markdown-preview-view {
+.markdown-embed {
   padding: 0px 0px 0px 0px;
 }
 
