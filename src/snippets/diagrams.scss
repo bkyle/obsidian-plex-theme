@@ -1,0 +1,4 @@
+/** Invert the colors of diagrams if in dark mode */
+.theme-dark img[alt*="@diagram"] {
+  filter: invert(100%);
+}

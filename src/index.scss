@@ -1,0 +1,97 @@
+/*
+obsidian-plex
+
+# Features
+
+- [IBM Plex](https://www.ibm.com/plex/) fonts, must be locally installed.
+- Monospace font for tables in editor mode
+
+# Credits
+
+- Color palette for graph in dark mode are from https://github.com/nickmilo/Cybertron
+- Color palette for graph in light node are from https://github.com/ryjjin/Obsidian-Dark-Graphite-Pie-theme
+- Many of the CSS hacks are from the Obsidian Community.
+
+*/
+
+:root {
+  --font-family-editor: 'IBM Plex Sans', var(--default-font);
+  --font-family-preview: 'IBM Plex Sans', var(--default-font);
+  --font-family-monospace: 'IBM Plex Mono', 'Source Code Pro', monospace;
+
+  --pie-graph-circle: #ec0c0c;
+  --pie-graph-line: #cccccc;
+  --pie-graph-text: #969696;
+  --pie-graph-tag: #b9ec41;
+  --pie-graph-attach: #83d4f4;
+  --pie-graph-unresolved: #8f938f;
+
+  --cybertron-graph-circle: #fcf601;
+  --cybertron-graph-line: #26798c;
+  --cybertron-graph-text: #cccccc;
+  --cybertron-graph-tag: #5dbcd2;
+  --cybertron-graph-attach: #d669bc;
+  --cybertron-graph-unresolved: #9e8aff;
+}
+
+.theme-light {
+  --graph-circle: var(--pie-graph-circle);
+  --graph-line: var(--pie-graph-line);
+  --graph-text: var(--pie-graph-text);
+  --graph-tag: var(--pie-graph-tag);
+  --graph-attach: var(--pie-graph-attach);
+  --graph-unresolved: var(--pie-graph-unresolved);
+
+  --text-accent: #002d9c;
+  --text-accent-hover: #0f62fe;
+
+  --calendar-accent: rgb(203, 77, 73);
+}
+
+.theme-dark {
+  --graph-circle: var(--cybertron-graph-circle);
+  --graph-line: var(--cybertron-graph-line);
+  --graph-text: var(--cybertron-graph-text);
+  --graph-tag: var(--cybertron-graph-tag);
+  --graph-attach: var(--cybertron-graph-attach);
+  --graph-unresolved: var(--cybertron-graph-unresolved);
+
+  --text-accent: #78a9ff;
+  --text-accent-hover: #a6c8ff;
+
+  --calendar-accent: rgb(116, 190, 247);
+}
+
+@import "graph-view.scss";
+@import "editor.scss";
+@import "preview.scss";
+
+/** Source View **************************************************************/
+
+.cm-header {
+  font-weight: 450 !important;
+}
+
+@import "snippets/guides.scss";
+
+/**
+ * Eliminate scroll bars for transclusions
+ * See https://forum.obsidian.md/t/flush-inline-embeds/7747/9?u=bkyle
+ */
+.markdown-preview-view .markdown-embed-content,
+.markdown-preview-view .markdown-embed-content>.markdown-preview-view {
+  max-height: unset;
+}
+
+
+/* https://github.com/liamcain/obsidian-calendar-plugin */
+#calendar-container {
+  --color-text-today: var(--calendar-accent);
+}
+
+#calendar-container .year {
+  color: var(--calendar-accent);
+}
+
+@import "snippets/floats.scss";
+@import "snippets/diagrams.scss";

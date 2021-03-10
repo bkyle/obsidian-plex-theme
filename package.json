@@ -1,0 +1,15 @@
+{
+  "name": "obsidian-plex-theme",
+  "version": "0.2",
+  "main": "index.js",
+  "repository": "git@github.com:bkyle/obsidian-plex-theme.git",
+  "author": "Bryan Kyle <bryan.kyle@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "sass src/index.scss obsidian-plex.css",
+    "dev-build": "sass --watch src/index.scss obsidian-plex.css"
+  },
+  "devDependencies": {
+    "sass": "^1.32.8"
+  }
+}

@@ -1,0 +1,41 @@
+.graph-view.color-fill {
+  color: var(--graph-circle);
+}
+
+.graph-view.color-circle {
+  color: var(--graph-circle);
+}
+
+.graph-view.color-line {
+  color: var(--graph-line);
+}
+
+.graph-view.color-text {
+  color: var(--graph-text);
+}
+
+.graph-view.color-fill-highlight {
+  color: var(--interactive-accent);
+}
+
+.graph-view.color-line-highlight {
+  color: rgb(var(--interactive-accent-rgb));
+}
+
+.graph-view.color-fill-tag {
+  color: var(--graph-tag) !important;
+}
+
+.graph-view.color-fill-attachment {
+  color: var(--graph-attach) !important;
+}
+
+.graph-view.color-fill-unresolved {
+  color: var(--graph-unresolved);
+  opacity: 1;
+}
+
+.graph-view.color-arrow {
+  color: var(--graph-line);
+  opacity: 1;
+}
