@@ -285,3 +285,34 @@ ul ul::before {
 #calendar-container .year {
   color: var(--calendar-accent);
 }
+
+/**
+ * Alignment of image embeds.
+ *
+ * Obsidian doesn't allow the alignment of images to be specified. The following
+ * styles allow a user to specify the alignment by crafting the embed in a
+ * specific way.  The syntax is as follows:
+ *
+ *   ![ALT ALIGN](FILE)
+ *
+ * where ALT is text that will be included in the alt attribute, ALIGN is one of
+ * @left or @right, and FILE is the file to be linked.
+ *
+ * For example:
+ *
+ *   ![I love cats! @left](cats.png)
+ *
+ * This can be combined with | to allow the size of the image to be specified as
+ * well.
+ *
+ *   ![I love cats! @left|100](cats.png)
+ */
+img[alt*="@left"] {
+  float: left;
+  margin: 0.5em 0.5em 0.5em 0em;
+}
+
+img[alt*="@right"] {
+  float: right;
+  margin: 0.5em 0em 0.5em 0.5em;
+}
