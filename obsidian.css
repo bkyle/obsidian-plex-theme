@@ -316,3 +316,8 @@ img[alt*="@right"] {
   float: right;
   margin: 0.5em 0em 0.5em 0.5em;
 }
+
+/** Invert the colors of an image if in dark mode */
+.theme-dark img[alt*="@invert"] {
+  filter: invert(100%);
+}
