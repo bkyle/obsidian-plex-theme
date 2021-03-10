@@ -32,4 +32,8 @@ jobs:
         run: | 
           yarn install
           yarn run build
-      - run: gh --help
+
+      - name: Release
+        run: |
+          echo "${{ secrets.PAT }}" | gh auth login --with-token
+          gh release list
