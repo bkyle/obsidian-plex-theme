@@ -24,10 +24,21 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-        
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+          token: ${{ secrets.PAT }}
+
       - name: Setup build environment
         uses: actions/setup-node@v2.1.5
-        
+
+      - name: Version
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          yarn version --non-interactive --patch
+          echo "::set-output name=tag::$(git describe --abbrev=0)"
+
       - name: Build
         run: | 
           yarn install
@@ -37,3 +48,8 @@ jobs:
         run: |
           echo "${{ secrets.PAT }}" | gh auth login --with-token
           gh release list
+
+      - name: Push
+        run: |
+          git config credential.helper '!f() {echo password=$GITHUB_TOKEN; f'
+          GITHUB_TOKEN=${{ secrets.PAT }} git push --tags
