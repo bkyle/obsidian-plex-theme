@@ -51,5 +51,5 @@ jobs:
 
       - name: Push
         run: |
-          git config credential.helper '!f() { echo "username=${GITHUB_ACTOR}\npassword=$GITHUB_TOKEN;" }; f'
+          git config credential.helper '!f() { echo "username=$GITHUB_ACTOR\\npassword=$GITHUB_TOKEN;" }; f'
           GITHUB_TOKEN=${{ secrets.PAT }} git push --tags
