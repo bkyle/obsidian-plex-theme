@@ -1,0 +1,10 @@
+/* https://github.com/liamcain/obsidian-calendar-plugin */
+#calendar-container {
+    --color-text-today: var(--calendar-accent);
+    --color-background-weekend: var(--calendar-background-weekend);
+
+}
+
+#calendar-container .year {
+  color: var(--calendar-accent);
+}

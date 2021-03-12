@@ -84,14 +84,6 @@ obsidian-plex
 }
 
 
-/* https://github.com/liamcain/obsidian-calendar-plugin */
-#calendar-container {
-  --color-text-today: var(--calendar-accent);
-}
-
-#calendar-container .year {
-  color: var(--calendar-accent);
-}
-
+@import "snippets/calendar.scss";
 @import "snippets/floats.scss";
 @import "snippets/diagrams.scss";
