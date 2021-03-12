@@ -1,3 +1,11 @@
+.theme-light {
+    --calendar-background-weekend: var(--background-secondary-alt);
+}
+
+.theme-dark {
+    --calendar-background-weekend: var(--background-primary);
+}
+
 /* https://github.com/liamcain/obsidian-calendar-plugin */
 #calendar-container {
     --color-text-today: var(--calendar-accent);
