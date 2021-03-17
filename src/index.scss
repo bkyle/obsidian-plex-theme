@@ -49,6 +49,11 @@ obsidian-plex
 }
 
 .theme-dark {
+  --background-primary: #282c34;
+  --background-primary-alt: #272b33;
+  --background-secondary: #23272e;
+  --background-secondary-alt: #21242b;
+
   --graph-circle: var(--cybertron-graph-circle);
   --graph-line: var(--cybertron-graph-line);
   --graph-text: var(--cybertron-graph-text);
