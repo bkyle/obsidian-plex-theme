@@ -1,0 +1,17 @@
+:root {
+  --cybertron-graph-circle: #fcf601;
+  --cybertron-graph-line: #26798c;
+  --cybertron-graph-text: #cccccc;
+  --cybertron-graph-tag: #5dbcd2;
+  --cybertron-graph-attach: #d669bc;
+  --cybertron-graph-unresolved: #9e8aff;
+}
+
+.theme-dark {
+  --graph-circle: var(--cybertron-graph-circle);
+  --graph-line: var(--cybertron-graph-line);
+  --graph-text: var(--cybertron-graph-text);
+  --graph-tag: var(--cybertron-graph-tag);
+  --graph-attach: var(--cybertron-graph-attach);
+  --graph-unresolved: var(--cybertron-graph-unresolved);
+}
