@@ -64,9 +64,11 @@
   --background-modifier-border: var(--doom-one-region);
   --text-selection: var(--doom-one-region);
   --text-highlight-bg: var(--doom-one-selection);
-  --interactive-accent-hover: var(--doom-one-violet);
-  --interactive-accent: var(--doom-one-violet);
-  --text-on-accent: var(--doom-one-grey);
+  --interactive-success: var(--doom-one-success);
+  // --interactive-accent-hover: var(--doom-one-comments);
+  // --interactive-accent: var(--doom-one-modeline-bg-inactive);
+  // --text-on-accent: var(--doom-one-modeline-fg);
+  // --background-modifier-cover: var(--doom-one-bg);
 }
 
 .theme-dark .cm-s-obsidian .cm-hmd-frontmatter.cm-def,
