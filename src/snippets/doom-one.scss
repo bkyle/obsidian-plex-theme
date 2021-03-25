@@ -106,3 +106,7 @@
 .theme-dark .cm-s-obsidian pre.HyperMD-codeblock .cm-attribute {
     color: var(--doom-one-variables) !important;
 }
+
+.theme-dark .workspace-leaf-resize-handle {
+    background: var(--doom-one-base3);
+}
