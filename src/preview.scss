@@ -19,28 +19,6 @@
     font-weight: 400;
 }
 
-/* Adjust font size to match source view */
-.markdown-preview-view h1 {
-  font-size: 32px;
-}
-
-/* Adjust font size to match source view */
-.markdown-preview-view h2 {
-  font-size: 24px;
-}
-
-/* Adjust font size to match source view */
-.markdown-preview-view h3 {
-  font-size: 19.2px;
-}
-
-/* Adjust font size to match source view */
-.markdown-preview-view h4,
-.markdown-preview-view h5,
-.markdown-preview-view h6 {
-  font-size: 16px;
-}
-
 /* Line under headings */
 .theme-dark .markdown-preview-view h1,
 .theme-dark .markdown-preview-view h2,
@@ -77,8 +55,4 @@
 .markdown-embed-link, .file-embed-link {
   top: 16px;
   right: -32px;
-}
-
-.markdown-preview-view pre[class *= "language-"] {
-  font-size: 14.4px;
 }
