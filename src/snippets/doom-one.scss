@@ -53,7 +53,6 @@
   --doom-one-modeline-bg-l: #1d2026;
   --doom-one-modeline-bg-inactive: #1d2026;
   --doom-one-modeline-bg-inactive-l: #21242b;
-
 }
 
 .theme-dark {
@@ -69,6 +68,10 @@
   // --interactive-accent: var(--doom-one-modeline-bg-inactive);
   // --text-on-accent: var(--doom-one-modeline-fg);
   // --background-modifier-cover: var(--doom-one-bg);
+}
+
+::selection {
+  background-color: #a2a4aA;
 }
 
 .theme-dark .cm-s-obsidian .cm-hmd-frontmatter.cm-def,
