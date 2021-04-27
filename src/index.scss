@@ -58,6 +58,22 @@ obsidian-plex
   font-weight: 450 !important;
 }
 
+.cm-header-1 {
+  font-size: 24pt;
+}
+
+.cm-header-2 {
+  font-size: 18pt;
+}
+
+.cm-header-3 {
+  font-size: 14.4pt;
+}
+
+.cm-header-4, .cm-header-5, .cm-header-6 {
+  font-size: 12pt;
+}
+
 @import "snippets/guides.scss";
 
 /**

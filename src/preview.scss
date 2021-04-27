@@ -16,7 +16,29 @@
 .markdown-preview-view h4,
 .markdown-preview-view h5,
 .markdown-preview-view h6 {
-    font-weight: 400;
+    font-weight: 450;
+}
+
+/* Adjust font size to match source view */
+.markdown-preview-view h1 {
+  font-size: 24pt;
+}
+
+/* Adjust font size to match source view */
+.markdown-preview-view h2 {
+  font-size: 18pt;
+}
+
+/* Adjust font size to match source view */
+.markdown-preview-view h3 {
+  font-size: 14.4pt;
+}
+
+/* Adjust font size to match source view */
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6 {
+  font-size: 12pt;
 }
 
 /* Line under headings */
