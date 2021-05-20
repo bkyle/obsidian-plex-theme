@@ -51,6 +51,7 @@ obsidian-plex
 @import "graph-view.scss";
 @import "editor.scss";
 @import "preview.scss";
+@import "snippets/lightbox.scss";
 
 /** Source View **************************************************************/
 
@@ -84,7 +85,6 @@ obsidian-plex
 .markdown-preview-view .markdown-embed-content>.markdown-preview-view {
   max-height: unset;
 }
-
 
 @import "snippets/calendar.scss";
 @import "snippets/floats.scss";

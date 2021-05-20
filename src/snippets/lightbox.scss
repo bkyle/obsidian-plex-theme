@@ -1,0 +1,35 @@
+// "lightbox" mode to allow zooming in on image attachments when in preview
+// mode. Shamelessly pulled from
+// https://forum.obsidian.md/t/image-zoom-click-hold-to-expand-images/5164.
+//
+// Usage:
+//
+// 1. Switch into preview mode
+//
+// 2. Click and hold on an image attachment, it will be scaled to the largest size that
+// will fit within the containing pane.  Release the mouse button to exit.
+//
+.markdown-preview-view img {
+  cursor: zoom-in;
+}
+
+.markdown-preview-view img:active {
+  cursor: zoom-out;
+  display: block;
+  z-index: 100;
+  position: fixed;
+  max-height: 100%;
+  max-width: 100%;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  margin: 0 auto;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--background-primary);
+}
