@@ -28,3 +28,7 @@ img[alt*="@right"] {
   float: right;
   margin: 0.5em 0em 0.5em 0.5em;
 }
+
+div[alt*="@center"] {
+  text-align: center;
+}
